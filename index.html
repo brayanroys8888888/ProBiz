@@ -10,6 +10,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"], 
+  input[type="number"], 
+  textarea, 
+  select {
+    font-size: 16px !important;
+  }
 :root{
   --bg:#0a0a0f;--bg2:#111118;--bg3:#18181f;--bg4:#20202a;--bg5:#2a2a36;
   --accent:#c9a84c;--accent2:#e8c97a;
@@ -279,7 +287,7 @@ const loginGoogle=async()=>{
 
 // ── constants ──
 const CATS=[{id:'meta',l:'Meta Ads',ic:'ti-brand-meta',c:'var(--info)'},{id:'transport',l:'Transport',ic:'ti-truck',c:'var(--accent)'},{id:'stock_achat',l:'Achat stock',ic:'ti-package',c:'var(--success)'},{id:'autres',l:'Autres',ic:'ti-dots',c:'var(--text3)'}];
-const TABS=[{id:'dashboard',l:'Tableau de bord',ic:'ti-layout-dashboard'},{id:'stock',l:'Stock',ic:'ti-watch'},{id:'ventes',l:'Ventes',ic:'ti-shopping-cart'},{id:'depenses',l:'Dépenses',ic:'ti-receipt'},{id:'cycles',l:'Cycles',ic:'ti-refresh'}];
+const TABS=[{id:'dashboard',l:'Tableau de bord',ic:'ti-layout-dashboard'},{id:'stock',l:'Stock',ic:'ti-box'},{id:'ventes',l:'Ventes',ic:'ti-shopping-cart'},{id:'depenses',l:'Dépenses',ic:'ti-receipt'},{id:'cycles',l:'Cycles',ic:'ti-refresh'}];
 const PAGES={dashboard:'Tableau de bord',stock:'Gestion du stock',ventes:'Ventes',depenses:'Dépenses',cycles:'Cycles de vente'};
 
 const openM=(n,d={})=>setState({modal:n,md:{...d}});
